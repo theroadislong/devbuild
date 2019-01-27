@@ -1,2 +1,17 @@
 .header
-	// styles
+	width 100%
+	margin 0 auto
+	position relative
+	margin-bottom 36px
+	@media (max-width: 640px)
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+
+	&__stamp
+		position absolute
+		top -14px
+		right -63px
+		@media (max-width: 640px)
+			position static

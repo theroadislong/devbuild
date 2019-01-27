@@ -1,10 +1,19 @@
 extends ./layout/main.pug
 
 include ../blocks/header/header.pug
+include ../blocks/user/user.pug
+include ../blocks/skills/skills.pug
+include ../blocks/jslevel/jslevel.pug
+include ../blocks/essay/essay.pug
+include ../blocks/future/future.pug
 include ../blocks/footer/footer.pug
-include ../blocks/content/content.pug
 
 block pagecontent
-  +header()
-  +content()
-  +footer()
+  main.container
+    +header()
+    +user()
+    +skills()
+    +jslevel()
+    +essay()
+    +future()
+    +footer()

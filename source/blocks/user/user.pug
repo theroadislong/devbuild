@@ -1,0 +1,19 @@
+mixin user()
+	section.user
+		img.user__heading(src="img/user-heading.png" alt="дело")
+		form.user__form
+			.user__form-wrapper
+				label.user__form-label(for="name") Полное ФИО
+				input.user__form-input(type="text" id="name" value="Дунаев Артём Александрович" readonly)
+			.user__form-wrapper
+				label.user__form-label(for="year") Год рождения
+				input.user__form-input(type="text" id="year" value="1993" readonly)
+			.user__form-wrapper
+				label.user__form-label(for="city") Место жительства
+				input.user__form-input(type="text" id="city" value="г. Тюмень, Россия" readonly)
+			.user__form-wrapper
+				label.user__form-label(for="skype") Скайп
+				input.user__form-input(type="text" id="skype" value="dunaev.aa" readonly)
+			.user__form-wrapper
+				label.user__form-label(for="email") Почта
+				input.user__form-input(type="text" id="email" value="dunaev.aa@yandex.ru" readonly)

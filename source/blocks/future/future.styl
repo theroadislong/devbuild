@@ -1,0 +1,56 @@
+.future
+	margin-bottom 88px
+	&__heading
+		section-heading()
+
+	&__description
+		section-description()
+		margin-bottom 13px
+
+	&__list
+		margin 0
+		padding 0
+		list-style none
+		display flex
+		flex-wrap wrap
+
+	&__skill
+		position relative
+		margin-right 20px
+		@media (max-width: 700px)
+			margin-bottom 20px
+
+	&__label
+		font-size 20px
+		line-height 25px
+		font-family 'PT Sans', sans-serif
+		font-weight 700
+		padding-left 34px
+		position relative
+		z-index 2
+		cursor pointer
+		display inline-block
+
+	&__input
+		display none
+
+	&__round
+		position absolute
+		width 36px
+		height 40px
+		top -16px
+		left -8px
+		background-image url('../img/radio.png')
+		background-repeat no-repeat
+		background-position 0 5px
+	
+	&__input:checked ~ &__round::after
+		position absolute
+		width 20px
+		height 18px
+		top 18px
+		left 9px
+		content ""
+		background-image url('../img/radio-checked.png')
+		background-repeat no-repeat
+		background-position 0 0

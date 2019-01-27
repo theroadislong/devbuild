@@ -1,0 +1,16 @@
+mixin future()
+	section.future
+		h2.future__heading Какие у вас планы на будущее?
+		p.future__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+
+		mixin item(text)
+			li.future__skill
+				input.future__input(type="radio" id!=attributes.id checked!=attributes.checked name="future")
+				label.future__label(for!=attributes.for)= text
+				span.future__round
+
+		ul.future__list
+			+item('Верстать')(for="css" id="css")
+			+item('Прокачиваться в JS')(for="js" id="js" checked="checked")
+			+item('Менеджерство')(for="manager" id="manager")
+			+item('Другое')(for="another" id="another")

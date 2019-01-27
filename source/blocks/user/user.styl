@@ -1,0 +1,52 @@
+.user
+	text-align center
+	margin-bottom 42px
+
+	&__heading
+		margin-left -39px
+		margin-bottom 42px
+
+	&__form
+		display flex
+		flex-direction column
+	
+	&__form-wrapper
+		display flex
+		flex-wrap wrap
+		justify-content center
+		align-items flex-end
+		min-height 63px
+
+	&__form-label
+		font-family 'PT Sans', sans-serif
+		font-size 22.43px
+		line-height 49.83px
+		font-weight 700
+		color #2f1b15
+		@media (max-width: 520px)
+			width 100%
+
+	&__form-input
+		flex-grow 1
+		min-height 50px
+		font-family 'Courier New', monospace
+		font-size 30px
+		line-height 36px
+		font-weight 400
+		color #000000
+		align-self flex-start
+		border none
+		outline none
+		padding-left 15px
+		margin-left 15px
+		background-color transparent
+		background-image url('../img/user-underline.png')
+		background-repeat no-repeat
+		background-position center bottom
+		@media (max-width: 960px)
+			padding-left 5px
+			width auto
+		@media (max-width: 850px)
+			font-size 16px
+		@media (max-width: 520px)
+			text-align center

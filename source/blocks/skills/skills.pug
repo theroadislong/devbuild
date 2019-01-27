@@ -1,0 +1,40 @@
+mixin skills()
+	section.skills
+		h2.skills__heading Расскажите о себе чекбоксами
+		p.skills__description Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+
+		mixin item(text)
+			li.skills__skill
+				input.skills__input(type="checkbox" id!=attributes.id checked!=attributes.checked)
+				label.skills__label(for!=attributes.for)= text
+				span.skills__box
+
+		.skills__basic
+			ul.skills__list
+				+item('БЭМ/OOCSS')(for="methodology" id="methodology" checked="checked")
+				+item('Pug(Jade)')(for="htmlpreprocessor" id="htmlpreprocessor" checked="checked")
+				+item('Stylus/LESS/SASS')(for="csspreprocessor" id="csspreprocessor" checked="checked")
+				+item('Работаю с SVG')(for="svg" id="svg")
+				+item('Верстаю семантично')(for="semantic" id="semantic" checked="checked")
+				+item('Accessibility (A11Y)')(for="accessibility" id="accessibility")
+				+item('ES2015/ES2016')(for="es" id="es" checked="checked")
+		.skills__medium
+			ul.skills__list
+				+item('Gulp/GRUNT')(for="gulp" id="gulp" checked="checked")
+				+item('Webpack')(for="webpack" id="webpack" checked)
+				+item('Дружу с WebGL')(for="webgl" id="webgl")
+				+item('JQuery')(for="jquery" id="jquery")
+				+item('Знаю/изучаю Angular')(for="angular" id="angular")
+				+item('Знаю/изучаю React')(for="react" id="react" checked)
+				+item('Знаю/изучаю Node.js')(for="node" id="node")
+		.skills__other
+			ul.skills__list
+				+item('Использую Git')(for="git" id="git" checked="checked")
+				+item('С глазомером всё ок')(for="pixelperfect" id="pixelperfect" checked="checked")
+				li.skills__skill
+					input.skills__input(type="checkbox" id="blog" checked)
+					label.skills__label(for="blog") Читаю 
+						a.skills__link(href="https://blog.csssr.ru" target="_blank") blog.csssr.ru
+					span.skills__box
+				+item('Я ленивый(-ая)')(for="lazy" id="lazy" checked="checked")
+				+item('У меня хороший английский')(for="english" id="english" checked="checked")

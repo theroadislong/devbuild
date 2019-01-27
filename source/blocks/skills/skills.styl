@@ -1,0 +1,68 @@
+.skills
+	margin-bottom 40px
+	&__heading
+		section-heading()
+	&__description
+		section-description()
+	&__list
+		font-family 'PT Sans', sans-serif
+		margin 0
+		padding 0
+		list-style none
+		display flex
+		flex-direction column
+		flex-wrap wrap
+
+	&__skill
+		margin-bottom 10px
+		position relative
+
+	&__basic
+		width 252px
+		display inline-block
+
+	&__medium 
+		width 266px
+		display inline-block
+
+	&__other
+		width 240px
+		display inline-block
+
+	&__label
+		font-size 21px
+		line-height 25px
+		font-family 'PT Sans', sans-serif
+		font-weight 700
+		padding-left 27px
+		position relative
+		z-index 2
+		cursor pointer
+		display inline-block
+
+	&__input
+		display none
+		
+	&__box
+		position absolute
+		width 19px
+		height 22px
+		top 0
+		left 0
+		background-image url('../img/checkbox.png')
+		background-repeat no-repeat
+		background-position 0 4px
+
+	&__input:checked ~ &__box::after
+		position absolute
+		width 21px
+		height 27px
+		top -6px
+		left 2px
+		content ""
+		background-image url('../img/checkbox-checked.png')
+		background-repeat no-repeat
+		background-position 0 0
+	
+	&__link
+		color #1f5f97
